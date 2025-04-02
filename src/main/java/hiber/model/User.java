@@ -10,14 +10,15 @@ public class User {
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    private Long id;
 
-   @Column(name = "name")
+   @Column
    private String firstName;
 
-   @Column(name = "last_name")
+   @Column
    private String lastName;
 
-   @Column(name = "email")
+   @Column
    private String email;
+
 
    public User() {}
    
@@ -58,4 +59,5 @@ public class User {
    public void setEmail(String email) {
       this.email = email;
    }
+
 }
